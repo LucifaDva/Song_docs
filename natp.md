@@ -22,17 +22,21 @@ NATP项目环境
    <http://www.sbrac.org/files/build-gnuradio>
    1. 下载源码：./build-gnuradio gitfetch
    2. 安装依赖 脚本：./build-gnuradio prereqs
-   3. 按顺序安装
+   3. 
+   按顺序安装
+   
    **注意**
    * 每次编译前将build目录删除或者将CMakeCache.txt删除
    * 安装使用脚本前带上`-v`，可以看到安装完成程度
    * 虚拟机安装的话可以成功安装一个然后创建一个snapshot
+   
    测试
    * 先测试是否能检测到设备
      rtl_eeprom
    * 测试检测飞机
      modes_rx --gain=60 -a --rtlsdr --kml=trace_out.kml
      使用googleEarth或其他类似软件打开trace_out.kml看
+
 ##后端环境
 后端比较简单  
 eclipse + pydev + python2.7 + django1.5.4 + subversion + subclipse1.8
